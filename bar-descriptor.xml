@@ -59,13 +59,18 @@
     <!-- <authorId>ABC1234YjsnUk235h</authorId> -->
    
     <initialWindow>
-        <autoOrients>true</autoOrients>
+        <aspectRatio>portrait</aspectRatio>
+        <autoOrients>false</autoOrients>
         <systemChrome>none</systemChrome>
         <transparent>false</transparent>
     </initialWindow>
     
     <!--  The category where the application appears. Either core.games or core.media. -->
     <category>core.games</category>
+    <splashScreens>
+       <image>splash_.png</image>
+       <image>splash.png</image>
+    </splashScreens>
     <configuration name="Device-Debug">
        <platformArchitecture>armle-v7</platformArchitecture>
        <asset path="arm/o.le-v7-g/RadioDawah" entry="true" type="Qnx/Elf">RadioDawah</asset>
@@ -97,6 +102,8 @@
         <include name="*.qm"/>
     </asset>
     <asset path="/Users/macbookair/Documents/developer /Design/mobile/ios/FINAL/FF_ICON_114x114.png">FF_ICON_114x114.png</asset>
+    <asset path="/Users/macbookair/Desktop/splash_.png">splash_.png</asset>
+    <asset path="/Users/macbookair/Desktop/splash.png">splash.png</asset>
     
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>

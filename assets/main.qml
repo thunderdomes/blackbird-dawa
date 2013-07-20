@@ -4,6 +4,7 @@ import bb.cascades 1.0
 
 Page {
     Container {
+        id: container
         // ...
         
         attachedObjects: [
@@ -34,6 +35,7 @@ Page {
             text: "Play"
             onClicked: {
                 if (player.play() != MediaError.None) {
+                    console.log("playing")
                     // Your error handling code here.
                 }
             }
