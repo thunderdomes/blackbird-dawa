@@ -34,16 +34,10 @@ Page {
                 }
             ]
             onClicked: {
-                if(player.mediaState==MediaState.Prepared){
-	                if (player.play() != MediaError.None) {
-                        btnPlay.text='Now Playing'
-                        player.play();
-	                    // Your error handling code here.
-	                }
-	                else{
-	                    btnPlay.text='Stop'
-	                    player.stop();
-	                }
+                if (player.play() != MediaError.None) {
+                    console.log("playing")
+                    btnPlay.text="Paused"
+                    // Your error handling code here.
                 }
             }
         }
